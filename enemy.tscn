@@ -2,16 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_fb1yw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwgtr"]
-size = Vector2(290, 362)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcubs"]
+size = Vector2(319, 372)
 
-[node name="Enemy" type="Node2D"]
+[node name="Enemy" type="RigidBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(594, 331)
-scale = Vector2(0.380407, 0.35177)
+position = Vector2(671, 321.125)
+scale = Vector2(0.435115, 0.363569)
 texture = ExtResource("1_fb1yw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(591, 333)
-shape = SubResource("RectangleShape2D_dwgtr")
+position = Vector2(666.5, 322)
+shape = SubResource("RectangleShape2D_bcubs")

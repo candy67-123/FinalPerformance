@@ -10,6 +10,12 @@ scale = Vector2(0.598958, 0.538333)
 texture = ExtResource("1_fhpte")
 
 [node name="Player" parent="." instance=ExtResource("2_b4x25")]
+position = Vector2(-666.157, -326.935)
 scale = Vector2(1, 1)
 
 [node name="Enemy" parent="." instance=ExtResource("3_opumx")]
+position = Vector2(-717.913, -345.511)
+
+[node name="BG sound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="enemy hitting sound" type="AudioStreamPlayer2D" parent="."]
