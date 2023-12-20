@@ -27,7 +27,8 @@ func _process(delta):
 	position += velocity * delta
 	
 
+
 func _on_body_entered(body):
 	hide()
-	$"enemy hitting sound".play()
 	$"../BG sound".stop()
+	$"../enemy hitting sound".play()

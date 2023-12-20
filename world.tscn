@@ -1,21 +1,21 @@
 [gd_scene load_steps=6 format=3 uid="uid://duemjd0qhekrw"]
 
-[ext_resource type="Texture2D" uid="uid://bwmny50vdxvr1" path="res://assets/wallpaperCabin.jpg" id="1_fhpte"]
 [ext_resource type="PackedScene" uid="uid://b6c8d3tnbmgsw" path="res://player.tscn" id="2_b4x25"]
 [ext_resource type="PackedScene" uid="uid://xmtplcfhc110" path="res://enemy.tscn" id="3_opumx"]
 [ext_resource type="AudioStream" uid="uid://dijlc3v6i0or3" path="res://assets/bg_music.mp3" id="4_fe4wf"]
+[ext_resource type="Texture2D" uid="uid://bwmny50vdxvr1" path="res://assets/wallpaperCabin.jpg" id="5_vxhh8"]
 [ext_resource type="AudioStream" uid="uid://25h8317w24nw" path="res://assets/enemy_hit.mp3" id="5_xf046"]
 
 [node name="World" type="Sprite2D"]
 position = Vector2(577, 323)
 scale = Vector2(0.6, 0.54)
-texture = ExtResource("1_fhpte")
+texture = ExtResource("5_vxhh8")
 
 [node name="Player" parent="." instance=ExtResource("2_b4x25")]
 position = Vector2(-651.131, -369.66)
 
 [node name="Enemy" parent="." instance=ExtResource("3_opumx")]
-position = Vector2(-778.018, -510.836)
+position = Vector2(-671.667, -535.185)
 
 [node name="BG sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_fe4wf")
